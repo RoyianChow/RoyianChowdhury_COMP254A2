@@ -402,9 +402,12 @@ class LinkedPositionalList(PositionalList):
 
     def indexOf(self, p):
         current = self.first()
+        #initialize current
         index = 0
+        #intiailize value of index
         while current is not None:
             if current == p:
+                #if current is equal to p then return the index
                 return index
             current = self.after(current)
             index += 1
